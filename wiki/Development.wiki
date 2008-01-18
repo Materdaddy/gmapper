@@ -32,3 +32,30 @@ This page will detail the setup used for developing gmapper.  I will be using th
   sudo /opt/lampp/lampp start
   }}}
   # That's it!  Now you're ready to view gmapper in your browser and start development
+
+= MySQL Setup =
+If MySQL is used in this project, this is how to easily setup a MySQL database using xampp.
+  # Create database
+  {{{
+  cd /opt/lampp/bin
+  sudo ./mysqladmin create <DB NAME>
+  }}}
+  # Connect to database using root
+  {{{
+  sudo ./mysql wordpress
+  }}}
+  # Make a user for the database
+  {{{
+  grant all privileges on *.* to '<DB USER>'@'%' identified by '<DB PASSWORD>';
+  }}}
+  # Flush privileges (so you don't have to restart SQL) and exit the MySQL interpreter:
+  {{{
+  flush privileges;
+  \q
+  }}}
+  # Test connecting using your new user
+  {{{
+  ./mysql <DB NAME> -u<DB USER> -p<PASSWORD>
+  }}}
+
+  * Note: if '%' doesn't work in grant statement, try 'localhost' for localhost connections.
