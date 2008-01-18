@@ -1,0 +1,34 @@
+#summary Development setup for this project
+
+= Introduction =
+This page will detail the setup used for developing gmapper.  I will be using the xampp package for development on local machines during development.
+
+= XAMPP/gmapper Setup =
+  # Download latest XAMPP package here: http://www.apachefriends.org/en/xampp.html
+  {{{
+  wget http://www.apachefriends.org/download.php?xampp-linux-1.6.5a.tar.gz
+  }}}
+  # Install XAMPP to /opt
+  {{{
+  sudo tar xzpvf xampp-linux-1.6.5a.tar.gz -C /opt
+  }}}
+  # Create symlink for development in home directory
+  {{{
+  cd /opt/lampp/htdocs
+  sudo ln -s /home/${USER}/public_html ${USER}
+  cd -
+  }}}
+  # Checkout gmapper
+  {{{
+  svn co http://gmapper.googlecode.com/svn/trunk/ gmapper --username <google code username>
+  }}}
+  # Create public_html link
+  {{{
+  ln -s gmapper public_html
+  }}}
+  # Setup and start XAMPP
+  {{{
+  sudo /opt/lampp/lampp security
+  sudo /opt/lampp/lampp start
+  }}}
+  # That's it!  Now you're ready to view gmapper in your browser and start development
