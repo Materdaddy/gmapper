@@ -1,0 +1,18 @@
+<!ELEMENT map		(settings,point*)>
+
+<!ELEMENT settings	(description,icons?)>
+<!ATTLIST settings	width CDATA #REQUIRED
+					height CDATA #REQUIRED>
+
+<!ELEMENT description (#CDATA)>
+<!ATTLIST description	name CDATA #REQUIRED
+						id CDATA #REQUIRED>
+
+<!ELEMENT icons EMPTY>
+<!ATTLIST icons	src CDATA #REQUIRED>
+
+<!ELEMENT point EMPTY>
+<!ATTLIST point	lat CDATA #REQUIRED
+				lon CDATA #REQUIRED
+				alt CDATA #REQUIRED
+				time CDATA #REQUIRED>

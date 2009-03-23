@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE map SYSTEM "gmapper.dtd">
+
+<map>
+	<settings width='200' height='100'>
+		<description name='Kauai Day 1' id='1'>
+			This is a map of our fun day number 1 in Kauai
+		</description>
+		<icons src='http://matandtiff.com/wp-content/plugins/wp-gmapper/gmapper.png' />
+	</settings>
+
+	<point lat='112.300 N' lon='-59.000 W' alt='29.022' time='2007:10:08 06:00:00 PST' />
+	<point lat='112.301 N' lon='-59.000 W' alt='29.021' time='2007:10:08 06:01:30 PST' />
+
+</map>
