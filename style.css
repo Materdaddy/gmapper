@@ -1,0 +1,88 @@
+.cpYearNavigation, .cpMonthNavigation
+{
+	background-color:#3366CC;
+	text-align:center;
+	vertical-align:center;
+	text-decoration:none;
+	color:#000000;
+	font-weight:bold;
+}
+
+.cpDayColumnHeader, .cpYearNavigation, .cpMonthNavigation,
+.cpCurrentMonthDate, .cpCurrentMonthDateDisabled, .cpOtherMonthDate,
+.cpOtherMonthDateDisabled, .cpCurrentDate, .cpCurrentDateDisabled,
+.cpTodayText, .cpTodayTextDisabled, .cpText
+{
+	font-family:arial;
+	font-size:8pt;
+}
+
+td.cpDayColumnHeader
+{
+	text-align:right;
+	border:solid thin #3366CC;
+	border-width:0px 0px 1px 0px;
+}
+
+.cpCurrentMonthDate, .cpOtherMonthDate, .cpCurrentDate
+{
+	text-align:right;
+	text-decoration:none;
+}
+
+.cpCurrentMonthDateDisabled, .cpOtherMonthDateDisabled, .cpCurrentDateDisabled
+{
+	color:#D0D0D0;
+	text-align:right;
+	text-decoration:line-through;
+}
+
+.cpCurrentMonthDate, .cpCurrentDate
+{
+	color:#000000;
+}
+
+.cpOtherMonthDate
+{
+	color:#808080;
+}
+
+td.cpCurrentDate
+{
+	color:white;
+	background-color: #3366CC;
+	border-width:1px;
+	border:solid thin #800000;
+}
+
+td.cpCurrentDateDisabled
+{
+	border-width:1px;
+	border:solid thin #FFAAAA;
+}
+
+td.cpTodayText, td.cpTodayTextDisabled
+{
+	border:solid thin #3366CC;
+	border-width:1px 0px 0px 0px;
+}
+
+a.cpTodayText, span.cpTodayTextDisabled
+{
+	height:20px;
+}
+
+a.cpTodayText
+{
+	color:black;
+}
+
+.cpTodayTextDisabled
+{
+	color:#D0D0D0;
+}
+
+.cpBorder
+{
+	border:solid thin #808080;
+}
