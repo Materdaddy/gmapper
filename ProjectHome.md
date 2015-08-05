@@ -1,0 +1,1 @@
+Easily create Google Maps for use on your web page.
